@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+}
+button{
+    width: 129px;
+    height: 41px;
+    border-radius: 6px;
+    background: #86BE3F;
+    border: 0;
+    color: white;
+}
+.sections__padding{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.navBarLinks{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #8A8888;
+}
+.navBarLinks:hover{
+    color:  #86BE3F;
+}
+.navBarLinks.active{
+    color:  #86BE3F;
+}
+.hero-caption{
+    max-width: 947px;
+    width: 100%;
+    left:0;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    color: white;
+}
+#hero-heading{
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+}
+#hero-para{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+}
+.main-title{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;    
+}
+.main-title:after{
+   content: "";
+   width: 100px;
+   height: 4px;
+  background:#86BE3F;
+}
+.mainCardStyling{
+    border: 0;
+}
+.mainCardStyling img{
+    width: 40%;
+    height: 40%;
+    margin-bottom: -30px;
+    z-index: 2;
+}
+.mainCard__bg{
+    background: #F8F8F8;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+.topBarText h6{
+    color: #8A8888;
+    font-weight: 400px;
+}
+.testimonial-para{
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 30px; 
+}
+.percheCardStyling img{
+    width: 100px;
+    height: 100px;
+}
+.percheMiniCards{
+    background: #FBFBFB;
+}
+.percheMiniCards img{
+    width: 40px;
+    height: 40px;
+}
+.footerLinks ul{
+    list-style: none;
+    padding-left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footerLinks ul li a{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+   
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 13px;
+   
+}
+.footer-section{
+    background-image: url("./assets/images/footerBg.png");
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background: #4D4D4D;
+}
+.custom-accordion .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+background-color: transparent;
+}
+.custom-aero-btn{
+    background-color: #86BE3F;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.newsLetterStyling input{
+    border:none;
+}
+.newsLetterStyling{
+    padding: 5px 10px 5px 25px;
+    border-radius: 50px;
+    background: white;
+}
+.newsLetterStylingOverall{
+    background: #86BE3F;
+}
+.secg-margin{
+    margin-right: 10px;
+}
+.button.accordion-button {
+    padding-left: 0;
+}
+::marker {
+    color: #86BE3F;
+}
+.sire-title{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;    
+}
+.sire-title:after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background:#86BE3F;
+}
+.sire-main-title{
+    color:#86BE3F;
+}
+.sire-img2{
+    width:400px;
+}
+.sire-img2{
+    margin-top: -140px;
+    margin-left: 40px;
+}
+.sireContent{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 40px;
+    margin-top: -50px;
+}
+.sireContent img{
+    align-self: flex-end;
+}
+.resistente_bg{
+    background-image: url("./assets/images/resisbg.png");
+    background-size: cover;
+}
+.circl-bg{
+    background-image: url("./assets/images/circle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.energyDotImg1{
+    margin-bottom: -50px;
+}
+.energyDotImg2{
+    margin-top: -50px;
+    z-index: -5;
+    float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@media screen and (max-width:950px) {
+    #hero-heading{
+        font-size: 44px;
+        line-height: 36px;
+    }
+    #hero-para{
+        font-size: 18px;
+        line-height: 24px;
+    } 
+    .pe-text-hidden h6{
+        display: none;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:650px) {
+    #hero-heading{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    #hero-para{
+        font-size: 16px;
+        line-height: 24px;
+    } 
+    .headerForSmallScreen{
+        display: none;
+    }
+    div#navbarScroll\ w-100 {
+        position: absolute;
+        z-index: 10000;
+        background: white;
+        width: 300px;
+        /* text-align: left; */
+        right: 0;
+        height: auto;
+        padding: 20px;
+    }
 }
